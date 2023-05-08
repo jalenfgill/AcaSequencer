@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: skyblue;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.option-bar {
+  position: fixed;
+  top: 0%;
+  justify-content: center;
+  display: flex;
+  height: 15%;
+  width: 100%;
+  background-color: rgba(46, 107, 248, 0.4);
+  border-bottom-left-radius: 25%;
+  border-bottom-right-radius: 25%;
+}
+
+.note-grid {
+  display: grid;
+  grid-template-rows: max-content;
+  grid-template-columns: max-content;
+  justify-content: left;
+}
+
+.tracker-grid {
+  display: grid;
+  grid-template-columns: max-content;
+  grid-template-rows: max-content;
+  justify-content: left;
+  margin-top: 10%;
+}
+
+.note {
+  height: 20px;
+  width: 40px;
+  margin-right: 5px;
+  background: black;
+  border: 1px solid white;
+  border-radius: 30%;
+  line-height: 20px;
+  text-align: center;
+
+}
+
+.note-row, .tracker-row {
+  justify-content: center;
+  display: inline-flex;
+}
+
+.note-name-null {
+  background: rgba(0, 0, 0, 0);
+  border: 0;
+}
+
+.note-name-natural {
+  background:rgba(255, 255, 255, 1);
+  border: 1px solid black;
+  justify-content: center;
+
+}
+
+.note-name-flat {
+  background: rgba(0, 0, 0, 1);
+  justify-content: center;
+}
+
+
+.note-active {
+  background: blue;
+}
+
+.tracker-note {
+  background: gray;
+}
+
+.tracker-active {
+  background: purple;
+}
